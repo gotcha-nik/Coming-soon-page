@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black min-h-screen flex flex-col justify-center items-center p-4">
+    <div class="coming-soon text-center rounded-lg shadow-2xl p-8 bg-white/5 backdrop-blur-md border border-white/10">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+            Coming Soon
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            We're working hard to launch our new site.  Get ready for something amazing!  Enter your email to be notified when we go live.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto">
+            <input
+                type="email"
+                placeholder="Enter your email"
+                class="flex-grow rounded-full px-6 py-3 text-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white/20 border border-white/10"
+            >
+            <button
+                class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-full px-8 py-3 text-lg font-semibold
+                         transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105
+                         border-2 border-white/20"
+            >
+                Notify Me
+            </button>
+        </div>
+        <p class="mt-8 text-sm text-gray-400">
+            &copy; 2025 Tech Co. All rights reserved.
+        </p>
+    </div>
+    <script>
+        // Optional: You can add a simple script to handle the button click
+        document.querySelector('button').addEventListener('click', function() {
+            const emailInput = document.querySelector('input[type="email"]');
+            if (emailInput.value.trim() !== '') {
+                alert('Thank you for subscribing! We will notify you soon.');
+                emailInput.value = ''; // Clear the input
+            } else {
+                alert('Please enter your email address.');
+            }
+        });
+    </script>
+</body>
+</html>
