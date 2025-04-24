@@ -1,0 +1,108 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b, #0c1a25);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.coming-soon {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 90%;
+  width: 100%;
+  max-width: 36rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.coming-soon h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.coming-soon p {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.coming-soon input {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin: 1rem 0.5rem;
+  width: calc(100% - 2rem);
+  max-width: 400px;
+  outline: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.coming-soon input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.coming-soon button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, #8b5cf6, #d946ef);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.coming-soon button:hover {
+  background: linear-gradient(to right, #a78bfa, #f0abfc);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.coming-soon button:active {
+  background: linear-gradient(to right, #8b5cf6, #d946ef);
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.coming-soon p {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .coming-soon h1 {
+    font-size: 2.5rem;
+  }
+
+  .coming-soon p {
+    font-size: 1rem;
+  }
+
+  .coming-soon input, .coming-soon button {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
